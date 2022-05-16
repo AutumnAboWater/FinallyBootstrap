@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+      body{
+        background-color: white;
+      }
+      tr{
+        font-size: 30px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary"> 
+      <div class="container">
+      <a target="_blank" class="navbar-brand" href="https://www.apple.com/"><img src="./img/Flogo.png" alt=""></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="font-size: 30px;margin-left: 30px;">主页 <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-size: 30px;margin-left: 30px;">配件</a>
+          </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a name="" id="" class="btn btn-outline-light" href="#" role="button" style="margin-left:100px;">登录</a>
+        <a name="" id="" class="btn btn-outline-light" href="./logIn.html" role="button" style="margin-left:10px ;">注册</a>
+      </div>
+    </div>
+  </nav> 
+  <div class="container-fluid">
+    <div class="tab-content">
+    <div  class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+          </ol>
+          <div  class="carousel-inner" role="listbox" style="border-radius:20px ;">
+              <div class="carousel-item active">
+                  <a target="_blank" href="https://prodev.jd.com/mall/active/3fNa4gg4udob1juiWbWWBp9z9PBs/index.html">
+                  <img  class="w-100" src="./img/iPhone1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Title</h3>
+                      <p>Description</p>
+                  </div>
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a target="_blank" href="https://item.jd.com/100019718269.html">
+                  <img class="w-100" src="./img/iPhone2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Title</h3>
+                      <p>Description</p>
+                  </div>
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a target="_blank" href="https://item.jd.com/100019718243.html">
+                  <img class="w-100" src="./img/iPhone3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Title</h3>
+                      <p>Description</p>
+                  </div>
+                  </a>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+    </div>
+    </div>
+    <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+      <a class="navbar-brand" href="#" ><h4>Apple</h4></a></a>
+      <nav class="nav  flex-column">
+        <a class="nav-link" href="#item-1" style="color: black;">iPhone</a>
+        <nav class="nav  flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-1"  style="color: black;">iPhone13系列</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-2"  style="color: black;">iPhone12系列</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-3"  style="color: black;">iPhone11系列</a>
+        </nav>
+        <a class="nav-link" href="#item-2"  style="color: black;">Mac</a>
+        <a class="nav-link" href="#item-3"  style="color: black;">AirPods</a>
+        <nav class="nav  flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-3-1"  style="color: black;">AirPods一代</a>
+          <a class="nav-link ms-3 my-1" href="#item-3-2"  style="color: black;">AirPods二代</a>
+        </nav>
+      </nav>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+      <div id="item-1">
+        <h2>iPhone</h2>
+      </div>
+
+      <h5 id="item-1-1" >iPhone13</h5>
+        <table class="table">
+          <thead>
+            <tr style="font-size: 30px;" >
+              <th >设备</th>
+              <th >详情</th>
+              <th>选购</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+        <!-- iPhone13ProMax -->
+        <div class="row">
+          <div class="col-lg">
+            <img style="margin-top: -120px;" src="./img/iphone-13-pro-max-green-select.png" alt="">
+          </div>
+          <div class="col-lg" style="font-size:20px ;" >
+                <p style="margin-top:30px ;font-size: 30px;">iPhone13ProMax</p>
+                <p>苍岭绿色,
+                  6.7 英寸
+                  超视网膜 XDR 显示屏1
+                  ProMotion 自适应刷新率,Pro 级摄像头系统,长焦、广角、超广角,A15 仿生芯片5 核图形处理器,超快的 5G 蜂窝网络³
+                  电影效果模式 (1080p,30 fps)
+                  杜比视界 HDR 视频拍摄，最高可达 4K,60 fps6 倍
+                  光学变焦范围,激光雷达扫描仪可实现夜间模式人像、低光环境中更快速的自动对焦,以及更出色的增强现实体验A15 仿生芯片
+                  全新 6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                  全新 5 核图形处理器
+                  全新 16 核神经网络引擎,视频播放最长可达 28 小时3面容 ID,超瓷晶面板
+                  手术级不锈钢边框,抗水性能：在 6 米深的水下停留时间最长可达 30 分钟4兼容 MagSafe 磁吸配件和
+                  无线充电器</p>
+
+          </div>
+          <div class="col-lg">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">颜色</th>
+                          <th scope="col">内存</th>
+                          <th scope="col">价格</th>
+                          <th scope="col">下单  </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">苍岭绿色</th>
+                          <td>128GB</td>
+                          <td>RMB8999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">银色</th>
+                          <td>256GB</td>
+                          <td>RMB9799</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">石墨色</th>
+                          <td>512GB</td>
+                          <td>RMB11399</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">金色</th>
+                          <td>1TB</td>
+                          <td>RMB12999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">远峰蓝色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+        <!-- iPhone13Pro -->          
+        <div class="row">
+          <div class="col-lg">
+            <img style="margin-top: -120px;" src="./img/iphone-13-pro-green-select.png" alt="">
+          </div>
+          <div class="col-lg" style="font-size:20px ;" >
+                <p style="margin-top:30px ; font-size: 30px;">iPhone13Pro</p>
+                <p>苍岭绿色,
+                  6.1 英寸
+                  超视网膜 XDR 显示屏1
+                  ProMotion 自适应刷新率,超快的 5G 蜂窝网络2,长焦
+                  广角
+                  超广角电影效果模式 (1080p,30 fps)
+                  杜比视界 HDR 视频拍摄，最高可达 4K,60 fps,6 倍
+                  光学变焦范围,激光雷达扫描仪可实现夜间模式人像、低光环境中更快速的自动对焦，以及更出色的增强现实体验,A15 仿生芯片
+                  全新 6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                  全新 5 核图形处理器
+                  全新 16 核神经网络引擎,视频播放最长可达 22 小时3,超瓷晶面板
+                  手术级不锈钢边框,抗水性能：在 6 米深的水下停留时间最长可达 30 分钟4,兼容 MagSafe 磁吸配件和
+                  无线充电器</p>
+          </div>
+          <div class="col-lg">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">颜色</th>
+                          <th scope="col">内存</th>
+                          <th scope="col">价格</th>
+                          <th scope="col">下单  </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">苍岭绿色</th>
+                          <td>128GB</td>
+                          <td>RMB7999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">银色</th>
+                          <td>256GB</td>
+                          <td>RMB8799</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">石墨色</th>
+                          <td>512GB</td>
+                          <td>RMB10399</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">金色</th>
+                          <td>1TB</td>
+                          <td>RMB11999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">远峰蓝色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+        <!-- iPhone13 -->
+        <div class="row">
+          <div class="col-lg">
+            <img style="margin-top: -120px;" src="./img/iphone-13-family-hero.png" alt="">
+          </div>
+          <div class="col-lg" style="font-size:20px ;" >
+                <p style="margin-top:30px ;font-size: 30px;">iPhone13</p>
+                <p>绿色,6.1 英寸
+                  超视网膜 XDR 显示屏1,超快的 5G 蜂窝网络2,电影效果模式 (1080p,30 fps)
+                  杜比视界 HDR 视频拍摄，最高可达 4K,60 fps
+                超快的 5G 蜂窝网络³2 倍,
+                光学变焦范围,A15 仿生芯片
+                全新 6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                全新 4 核图形处理器
+                全新 16 核神经网络引擎,视频播放最长可达 19 小时3,面容 ID,超瓷晶面板
+                航空级铝金属边框,抗水性能：在 6 米深的水下停留时间最长可达 30 分钟4,兼容 MagSafe 磁吸配件和
+                无线充电器</p>
+          </div>
+          <div class="col-lg">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">颜色</th>
+                          <th scope="col">内存</th>
+                          <th scope="col">价格</th>
+                          <th scope="col">下单  </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">绿色</th>
+                          <td>128GB</td>
+                          <td>RMB5999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">粉色</th>
+                          <td>256GB</td>
+                          <td>RMB6799</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">蓝色</th>
+                          <td>512GB</td>
+                          <td>RMB8399</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">午夜色</th>
+                          <td>/</td>
+                          <td>/</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">星光色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                      <tr>
+                        <th scope="row">红色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+        <!-- iPhone13Mini -->
+        <div class="row">
+          <div class="col-lg">
+            <img style="margin-top: -120px;" src="./img/iphone-13-mini-green-select.png" alt="">
+          </div>
+          <div class="col-lg" style="font-size:20px ;" >
+                <p style="margin-top:30px ;font-size: 30px;">iPhone13Mini</p>
+                <p>绿色,5.4 英寸
+                  超视网膜 XDR 显示屏1,超快的 5G 蜂窝网络2,广角
+                  超广角
+                  电影效果模式 (1080p,30 fps)
+                  杜比视界 HDR 视频拍摄，最高可达 4K,60 fps,2 倍,
+                光学变焦范围,A15 仿生芯片
+                全新 6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                全新 4 核图形处理器
+                全新 16 核神经网络引擎,视频播放最长可达 17 小时3,面容 ID,超瓷晶面板
+                航空级铝金属边框,抗水性能：在 6 米深的水下停留时间最长可达 30 分钟4,兼容 MagSafe 磁吸配件和
+                无线充电器</p>
+          </div>
+          <div class="col-lg">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">颜色</th>
+                          <th scope="col">内存</th>
+                          <th scope="col">价格</th>
+                          <th scope="col">下单  </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">绿色</th>
+                          <td>128GB</td>
+                          <td>RMB5199</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">粉色</th>
+                          <td>256GB</td>
+                          <td>RMB5999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">蓝色</th>
+                          <td>512GB</td>
+                          <td>RMB7599</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">午夜色</th>
+                          <td>/</td>
+                          <td>/</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">星光色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                      <tr>
+                        <th scope="row">红色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      <h5 id="item-1-2">iPhone12</h5>
+      <table class="table">
+        <thead>
+          <tr >
+            <th >设备</th>
+            <th >详情</th>
+            <th>价格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+        <!-- iPhone12 -->
+        <div class="row">
+          <div class="col-lg">
+            <img  src="./img/iphone-12-green-select-2020.png" alt="">
+          </div>
+          <div class="col-lg" style="font-size:20px ;" >
+                <p style="margin-top:30px ;font-size: 30px;">iPhone12</p>
+                <p>绿色,6.1 英寸
+                  超视网膜 XDR 显示屏1,超快的 5G 蜂窝网络2,广角
+                  超广角
+                  —
+                  杜比视界 HDR 视频拍摄，最高可达 4K,30 fps
+                  2 倍
+                  光学变焦范围,A14 仿生芯片
+                  6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                  4 核图形处理器
+                  16 核神经网络引擎,视频播放最长可达 17 小时3,面容 ID,超瓷晶面板
+                航空级铝金属边框,抗水性能：在 6 米深的水下停留时间最长可达 30 分钟4,兼容 MagSafe 磁吸配件和
+                无线充电器</p>
+          </div>
+          <div class="col-lg">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">颜色</th>
+                          <th scope="col">内存</th>
+                          <th scope="col">价格</th>
+                          <th scope="col">下单  </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">绿色</th>
+                          <td>64GB</td>
+                          <td>RMB5199</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">紫色</th>
+                          <td>128GB</td>
+                          <td>RMB5999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">蓝色</th>
+                          <td>256GB</td>
+                          <td>RMB6399</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">白色</th>
+                          <td>/</td>
+                          <td>/</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">黑色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                      <tr>
+                        <th scope="row">红色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+        <!-- iPhone12Mini -->
+        <div class="row">
+                  <div class="col-lg">
+                    <img style="margin-top: -120px;" src="./img/iphone-12-mini-green-select-2020.png" alt="">
+                  </div>
+                  <div class="col-lg" style="font-size:20px ;" >
+                        <p style="margin-top:30px ;font-size: 30px;">iPhone12Mini</p>
+                        <p>绿5.4 英寸
+                          超视网膜 XDR 显示屏1,超快的 5G 蜂窝网络2,广角
+                          超广角
+                          —
+                          杜比视界 HDR 视频拍摄，最高可达 4K,30 fps
+                          2 倍
+                          光学变焦范围,A14 仿生芯片
+                          6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                          4 核图形处理器
+                          16 核神经网络引擎,视频播放最长可达 15 小时3,面容 ID,超瓷晶面板
+                        航空级铝金属边框,抗水性能：在 6 米深的水下停留时间最长可达 30 分钟4,兼容 MagSafe 磁吸配件和
+                        无线充电器</p>
+                  </div>
+                  <div class="col-lg">
+                      <table class="table table-striped">
+                          <thead>
+                              <tr>
+                                  <th scope="col">颜色</th>
+                                  <th scope="col">内存</th>
+                                  <th scope="col">价格</th>
+                                  <th scope="col">下单  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th scope="row">绿色</th>
+                                  <td>64GB</td>
+                                  <td>RMB4499</td>
+                                  <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">紫色</th>
+                                  <td>128GB</td>
+                                  <td>RMB4899</td>
+                                  <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">蓝色</th>
+                                  <td>256GB</td>
+                                  <td>RMB5699</td>
+                                  <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">白色</th>
+                                  <td>/</td>
+                                  <td>/</td>
+                                  <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">黑色</th>
+                                <td>/</td>
+                                <td>/</td>
+                                <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                            </tr>
+                              <tr>
+                                <th scope="row">红色</th>
+                                <td>/</td>
+                                <td>/</td>
+                                <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </div>
+        </div>
+      </div>
+      <h5 id="item-1-3">iPhone11</h5>
+      <table class="table">
+        <thead>
+          <tr >
+            <th >设备</th>
+            <th >详情</th>
+            <th>价格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+        <!-- iPhone11 -->
+        <div class="row">
+          <div class="col-lg">
+            <img  src="./img/iphone11-black-select-2019.png" alt="">
+          </div>
+          <div class="col-lg" style="font-size:20px ;" >
+                <p style="margin-top:30px ;font-size: 30px;">iPhone11</p>
+                <p>绿色,6.1 英寸
+                  Liquid 视网膜高清显示屏1,4G LTE 蜂窝网络2,广角
+                  超广角
+                  2 倍
+                  光学变焦范围,A13 仿生芯片
+                  6 核中央处理器，具有 2 个性能核心和 4 个能效核心
+                  4 核图形处理器
+                  8 核神经网络引擎,视频播放最长可达 17 小时3,面容 ID,前后玻璃面板
+                  航空级铝金属边框,抗水性能：在 2 米深的水下停留时间最长可达 30 分钟</p>
+          </div>
+          <div class="col-lg">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">颜色</th>
+                          <th scope="col">内存</th>
+                          <th scope="col">价格</th>
+                          <th scope="col">下单  </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">绿色</th>
+                          <td>64GB</td>
+                          <td>RMB3999</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">紫色</th>
+                          <td>128GB</td>
+                          <td>RMB4399</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">黄色</th>
+                          <td>/</td>
+                          <td>/</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">白色</th>
+                          <td>/</td>
+                          <td>/</td>
+                          <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">黑色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                      <tr>
+                        <th scope="row">红色</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      <h2 id="item-2">Mac</h2>
+      <table class="table">
+        <thead>
+          <tr >
+            <th >设备</th>
+            <th >详情</th>
+            <th>价格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+            <!-- MacBook Pro14 -->
+      <div class="row">
+        <div class="col-lg">
+          <img  src="./img/mbp14-spacegray-select-202110_GEO_CN.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">MacBook Pro14英寸</p>
+              <p>8 核中央处理器
+                14 核图形处理器
+                16GB 统一内存
+                512GB 固态硬盘¹
+                16 核神经网络引擎
+                14 英寸 Liquid 视网膜 XDR 显示屏
+                三个雷雳 4 端口，以及 HDMI 端口、SDXC 卡插槽和 MagSafe 3 端口
+                带有触控 ID 的妙控键盘
+                力度触控板
+                67W USB-C 电源适配器</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <td>512GB</td>
+                        <td>RMB14999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB14999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </div>
+      </div>
+            <!-- MacBook Pro14 -->
+      <div class="row">
+        <div class="col-lg">
+          <img  src="./img/mbp14-silver-select-202110_GEO_CN.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">MacBook Pro14英寸</p>
+              <p>10 核中央处理器
+                16 核图形处理器
+                16GB 统一内存
+                1TB 固态硬盘¹
+                16 核神经网络引擎
+                14 英寸 Liquid 视网膜 XDR 显示屏
+                三个雷雳 4 端口，以及 HDMI 端口、SDXC 卡插槽和 MagSafe 3 端口
+                带有触控 ID 的妙控键盘
+                力度触控板
+                96W USB-C 电源适配器</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <td>1TB</td>
+                        <td>RMB18999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB18999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </div>
+      </div>
+            <!-- MacBook Pro13 -->
+      <div class="row">
+        <div class="col-lg">
+          <img  src="./img/mbp-silver-select-202011_GEO_CN.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">MacBook Pro13英寸</p>
+              <p>Apple M1 芯片，配备 8 核中央处理器和 8 核图形处理器
+                256GB 固态硬盘¹
+                Apple M1 芯片，配备 8 核中央处理器、8 核图形处理器和 16 核神经网络引擎
+                8GB 统一内存
+                256GB 固态硬盘
+                采用原彩显示技术的 13 英寸视网膜显示屏
+                妙控键盘
+                触控栏和触控 ID
+                力度触控板
+                两个雷雳 / USB 4 端口</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <td>256GB</td>
+                        <td>RMB9999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB9999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <th scope="row">/</th>
+                    <td>1TB</td>
+                    <td>RMB11499</td>
+                    <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                </tr>
+                
+                </tbody>
+            </table>
+        </div>
+      </div>
+        <!-- MacBook Pro16 -->
+      <div class="row">
+        <div class="col-lg">
+          <img  src="./img/mbp16-spacegray-select-202110_GEO_CN.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">MacBook Pro16英寸</p>
+              <p>10 核中央处理器
+                16 核图形处理器
+                16GB 统一内存
+                512GB 固态硬盘¹
+                16 核神经网络引擎
+                16 英寸 Liquid 视网膜 XDR 显示屏
+                三个雷雳 4 端口，以及 HDMI 端口、SDXC 卡插槽和 MagSafe 3 端口
+                带有触控 ID 的妙控键盘
+                力度触控板
+                140W USB-C 电源适配器</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <td>512GB</td>
+                        <td>RMB18999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB18999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <th scope="row">/</th>
+                    <td>1TB</td>
+                    <td>RMB20499</td>
+                    <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                </tr>
+                
+                </tbody>
+            </table>
+        </div>
+      </div>
+              <!-- MacBook Air -->
+      <div class="row">
+        <div class="col-lg">
+          <img  src="./img/macbook-air-space-gray-select-201810.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">MacBook Air13</p>
+              <p>Apple M1 芯片，配备 8 核中央处理器和 7 核图形处理器
+                256GB 存储容量
+                Apple M1 芯片，配备 8 核中央处理器、7 核图形处理器和 16 核神经网络引擎
+                8GB 统一内存
+                256GB 固态硬盘¹
+                采用原彩显示技术的视网膜显示屏
+                妙控键盘
+                触控 ID
+                力度触控板
+                两个雷雳 / USB 4 端口</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <td>256GB</td>
+                        <td>RMB7999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB7999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">金色</th>
+                      <td>/</td>
+                      <td>RMB7999</td>
+                      <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                
+                </tbody>
+            </table>
+        </div>
+      </div>
+          <!-- MacBook Air -->
+      <div class="row">
+        <div class="col-lg">
+          <img  src="./img/macbook-air-space-gray-select-201810.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">MacBook Air13</p>
+              <p>Apple M1 芯片，配备 8 核中央处理器和 8 核图形处理器
+                512GB 存储容量
+                Apple M1 芯片，配备 8 核中央处理器、8 核图形处理器和 16 核神经网络引擎
+                8GB 统一内存
+                512GB 固态硬盘¹
+                采用原彩显示技术的视网膜显示屏
+                妙控键盘
+                触控 ID
+                力度触控板
+                两个雷雳 / USB 4 端口</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <td>512GB</td>
+                        <td>RMB9799</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB9799</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">金色</th>
+                      <td>/</td>
+                      <td>RMB9799</td>
+                      <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                
+                </tbody>
+            </table>
+        </div>
+      </div>
+          <!-- iMac -->
+      <div class="row">
+        <div class="col-lg">
+          <img style="margin-left: 30px;margin-top: -30px;"  src="./img/imac-24-green-selection-hero-202104.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">全新 24 英寸 iMac</p>
+              <p>Apple M1 芯片
+                8 核中央处理器
+                7 核图形处理器256GB 存储容量
+                256GB 存储容量¹
+                8GB 统一内存
+                24 英寸 4.5K 视网膜显示屏²
+                两个雷雳 / USB 4 端口
+                —
+                —
+                妙控键盘</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">内存</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">蓝色</th>
+                        <td>256GB</td>
+                        <td>RMB9999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">银色</th>
+                        <td>/</td>
+                        <td>RMB9999</td>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">绿色</th>
+                      <td>/</td>
+                      <td>RMB9999</td>
+                      <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">粉色</th>
+                    <td>/</td>
+                    <td>RMB9999</td>
+                    <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                </tr>
+                      
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <h2 id="item-3">AirPods</h2>
+      <table class="table">
+        <thead>
+          <tr >
+            <th >设备</th>
+            <th >详情</th>
+            <th>价格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+        <!-- AirPods Max -->
+      <div class="row">
+        <div class="col-lg">
+          <img   src="./img/airpods-max-select-silver-202011.png" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">AirPods Max</p>
+              <p>精心设计服服帖帖
+                穹网由织物构成，耳垫由符合声学的记忆棉打造。高保真音质 Apple 设计的驱动单元可呈现高保真音质，
+                能使声音在整个可听范围内都实现超低的失真度。噪声控制
+                主动降噪，声声入耳更沉浸。通透模式，让你听到周围的声音。空间音频
+                动态头部追踪功能，给你剧场般的环绕音效1。</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">颜色</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">深空灰色</th>
+                        <th>RMB4399</th>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">银色</th>
+                      <th>/</th>
+                      <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                      <tr>
+                        <th scope="row">绿色</th>
+                        <th>/</th>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">粉色</th>
+                      <th>/</th>
+                      <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">天蓝色</th>
+                    <th>/</th>
+                    <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <!-- AirPods Pro -->
+      <div class="row">
+        <div class="col-lg">
+          <img style="margin-left: -50px;"  src="./img/MWP22.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">AirPods Pro</p>
+              <p>妙得不同凡、主动降噪、通透模式、耳塞尺寸可选、MagSafe 充电盒、卓越音质</p>
+              <p>更多妙处：
+                Apple 设计的 H1 芯片大大降低了音频延迟。耳机柄上的力度感应器，
+                让你能轻松控制音乐播放和通话，并可在主动降噪与通透模式之间切换。有
+                了 Siri 信息播报功能，你可以让 Siri 通过 AirPods 为你读出信息的内容。
+                借助音频共享功能，你和好友还能用两副 AirPods 一起欣赏同一音频，方便你分享各种游戏、电影和音乐³。</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">RMB1999</th>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td></td>
+                    </tr>      
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <h5 id="item-3-1">AirPods二代</h5>
+      <table class="table">
+        <thead>
+          <tr >
+            <th >设备</th>
+            <th >详情</th>
+            <th>价格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+            <!-- AirPods 二代 -->
+      <div class="row">
+        <div class="col-lg">
+          <img   src="./img/MV7N2.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">AirPods二代</p>
+              <p>由 Apple 设计
+
+                自动开启、自动连接
+                
+                轻松搭配你的各种 Apple 设备⁶
+                
+                通过"嘿 Siri"或轻点两下快速访问 Siri
+                
+                轻点两下开始播放或跳过当前内容
+                
+                在充电盒中快速充电
+                
+                充电盒可通过闪电接口充电
+                
+                层次丰富、高品质的音频和声音
+                
+                在不同设备之间流畅转换</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">RMB999</th>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <h5 id="item-3-2">AirPods三代</h5>
+      <table class="table">
+        <thead>
+          <tr >
+            <th >设备</th>
+            <th >详情</th>
+            <th>价格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+          <!-- AirPods 三代 -->
+      <div class="row">
+        <div class="col-lg">
+          <img   src="./img/MME73.jpg" alt="">
+        </div>
+        <div class="col-lg" style="font-size:20px ;" >
+              <p style="margin-top:30px ;font-size: 30px;">AirPods三代</p>
+              <p>全新设计
+                AirPods 重量轻盈，贴合耳部轮廓，佩戴时的角度恰到好处，
+                不仅十分舒适，还能更好地将声音送入你的耳中。耳机柄长度比 AirPods (第二代) 缩短了 33%，
+                并内置力度感应器，便于控制音乐和通话。
+                支持动态头部追踪的空间音频
+                让声音环绕在你周围，为音乐、视频和电影营造沉浸式的三维空间效果。
+                AirPods 配备的陀螺仪和加速感应器可默契协作，跟踪你的头部运动，
+                让你仿佛身处歌曲和场景的中央¹。</p>
+        </div>
+        <div class="col-lg">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">价格</th>
+                        <th scope="col">下单</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">RMB1399</th>
+                        <td><button class="btn-sm btn-outline-dark" type="button">选购</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

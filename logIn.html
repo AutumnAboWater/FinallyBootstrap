@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./vue.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <style>
+      body{
+          background-color:#525561 ;
+      }
+      #enroll{
+        background-image: url(./img/注册图片1.jpg);
+        background-repeat: no-repeat;
+        margin-top: 70px;
+        margin-left: auto;
+        border-radius: 30px;
+        background-size: cover;
+      }
+      .form-control {
+        border-radius: 15px;
+      }
+      .mb-3{
+        margin-left: 150px;
+      }
+      label{
+        color:white;
+      }
+      .item_bock {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height:94px;
+          width: 300px;
+          padding:0px 24px 0px 38px;
+          border-bottom: 1px solid transparent;
+          background: transparent;
+      }
+      .head_p {
+          height:132px;
+      }
+      .head_img{
+          height: 90px;
+      }
+      .head_img img{
+          width:90px;
+          height:90px;
+          border-radius:50px
+      }
+      .setting_right{
+          display: flex;
+          height: 37px;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      .hiddenInput{
+          display: none;
+      }
+      .caption {
+          color: #8F8F8F;
+          font-size: 26px;
+          height: 37px;
+      }
+      #input{
+        color: white;
+      }
+    </style>
+</head>
+<body >
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary"> 
+        <div class="container">
+        <a target="_blank" class="navbar-brand" href="https://www.apple.com/"><img src="./img/Flogo.png" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a  class="nav-link" href="./index.html" style="font-size: 30px;margin-left: 30px;">主页 <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-size: 30px;margin-left: 30px;">其他</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <a name="" id="" class="btn btn-outline-light" href="#" role="button" style="margin-left:100px;">登录</a>
+          <a name="" id="" class="btn btn-outline-light" href="#" role="button" style="margin-left:10px ;">注册</a>
+        </div>
+      </div>
+    </nav> 
+
+    <div id="enroll"  class="container-sm w-100 " >
+      <h1 style="color: white;font-family: fantasy;" >Make a Apple's Id</h1>
+      <div id="app">
+        <div class="item_bock head_p">
+            <div class="head_img">
+             <img :src="userInfo.avatar"/>
+            </div>
+            <div class="setting_right" @click.stop="uploadHeadImg">
+             <!-- <div class="caption">更改头像</div> -->
+             <button class="captionbtn btn btn-outline-light btn-md">更换头像</button>
+            </div>
+            <input type="file" accept="image/*" @change="handleFile" class="hiddenInput"/>
+        </div>
+      </div>
+      <script>
+        new Vue({
+         el:'#app',
+         data:{
+             message:'Nihao',
+             userInfo: {
+             avatar: './img/2.jpeg'
+             }
+         },
+         methods: {
+                 uploadHeadImg: function () {
+                 this.$el.querySelector('.hiddenInput').click()
+                 },
+                 handleFile: function (e) {
+                     let $target = e.target || e.srcElement
+                     let file = $target.files[0]
+                     var reader = new FileReader()
+                     reader.onload = (data) => {
+                         let res = data.target || data.srcElement
+                         this.userInfo.avatar = res.result
+                     }
+                     reader.readAsDataURL(file)
+                 },
+         }
+     })
+     </script>
+      <form class="row g-3 "  >
+        <div class=" form-floating mb-3 w-25" >
+          <input type="text" name="" id="input" class="form-control bg-transparent" placeholder="请输入昵称" aria-describedby="helpId" required>
+          <label for="floatingInput" class="col-form-label">昵称:</label>
+        </div>
+        <div class="form-floating mb-3 w-25">
+          <input type="email" class="form-control bg-transparent" name="email" id="input" aria-describedby="emailHelpId" placeholder="输入邮箱" aria-label="Email" required>
+          <label for="floatingInput" class="form-label">E-mail:</label>
+          <!-- <small id="helpId" class="form-text text-muted" ></small> -->
+        </div>
+        <div class="form-floating mb-3 w-25">
+          <input type="password" class="form-control bg-transparent" name="" id="input" placeholder="确认密码"required>
+          <label for="floatingInput" class="form-label">密码:</label>
+        </div>
+        <div class=" form-floating mb-3 w-25">
+          <input type="password" class="form-control bg-transparent" name="" id="input" placeholder="请输入密码"required>
+          <label for="floatingInput" class="form-label" >确认密码</label>
+          <!-- <small id="helpId" class="form-text text-muted" ></small> -->
+        </div>
+        <div class="form-floating mb-3 w-25">
+          <input type="date"
+            class="form-control bg-transparent" name="" id="input" aria-describedby="helpId" placeholder=""required>
+            <label for="floatingInput" class="form-label">生日:</label>
+        </div>
+        <div class="input-group form-floating mb-3 w-25">
+          <input type="tel"
+              class="form-control form-control bg-transparent" name="" id="input" aria-describedby="button-addon2" placeholder="输入手机号" required>
+              <label for="floatingInput" class="form-label">手机号:</label>
+              <button class="btn btn-secondary" type="button" id="button-addon2" style="height:73px ;border-bottom-right-radius: 20px;border-top-right-radius: 20px;">获取验证码</button>
+        </div>
+        <div class=" form-floating mb-3 w-25">
+          <textarea class="form-control bg-transparent" placeholder="个人简介" id="input" style="height: 200px;width: 300px;"></textarea>
+          <label for="floatingTextarea2">个人简介:</label>
+        </div>
+        <div class="mb-3 w-25">
+          <textarea disabled class="form-control bg-transparent" name="" id="" style="height:200px ;width:300px;color: white ; resize: none;" >😸您的密码长度必须为 8-20 个字符，包含字母和数字，并且不得包含空格、特殊字符或表情符号
+😁我们永远不会与其他人分享您的电子邮件。</textarea>
+        </div>
+        <div class="mb-4 w-25" style="margin-top: 150px;margin-left: auto;">
+
+         <button class="btn btn-outline-warning btn-lg" type="reset"style="margin-left: 50px ;" >重置</button>
+         <button class="btn btn-outline-light btn-lg" type="submit" style="margin-left: 50px ;">提交</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
